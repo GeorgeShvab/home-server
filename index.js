@@ -55,4 +55,4 @@ const sendPushMessages = async () => {
   await Promise.all(promises);
 };
 
-cron.schedule("* * * *", () => sendPushMessages());
+cron.schedule("0 * * * *", () => sendPushMessages());
